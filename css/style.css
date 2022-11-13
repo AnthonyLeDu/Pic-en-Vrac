@@ -8,68 +8,86 @@ body a {
     color: #000;
 }
 
-body a:hover {
+body header a:hover {
     color: #00A0C6;
 }
 
 
 /* HEADER */
+header {
+    /* display: flex;
+    flex-direction: column;
+    align-content: center; */
+}
 
-.headerNav {
+.header-nav-container {
     display: flex;
-    padding: 0 16%;
+    justify-content: center;
     border-bottom: 1px solid #e5e5e5;
     margin-bottom: 1em;
 }
 
-.headerNav * {
+.header-nav {
+    display: flex;
+    flex-grow: 1;
+    max-width: 1100px;
+}
+
+.header-nav * {
     padding: 1em 1em;
     margin: 0;
 }
 
-.headerNav a {
+.header-nav a {
     color: #000;
 }
 
-.headerNav a.--inactive {
+.header-nav a.-inactive {
     pointer-events: none;
     background-color: #eeeeee;
     color: #7a7a7a;
 }
 
-.headerNav__contact {
+.header-nav__contact {
     flex-grow: 1;
 }
 
-.shoppingNav {
-    position: relative;
-    padding: 0 16% 1em;
-    box-shadow: 0 5px 5px #ccc
-}
-
-.shoppingNav__container {
+.shopping-nav {
     display: flex;
-    height: 9em;
+    justify-content: center;
+    
+    padding-bottom: 1em;
+    box-shadow: 0 0.2em 0.2em #CCC;
+    z-index: 1;
 }
 
-.shoppingNav__logoButton {
+.shopping-nav-container {
+    display: flex;
+    position: relative;
+    height: 9em;
+    max-width: 1100px;
+    flex-grow: 1;
+}
+
+.shopping-nav-container__logoButton {
     padding: 0.7em;
 }
 
-.shoppingNav img {
+.shopping-nav img {
     height: 100%;
 }
 
-.shoppingNav__menu {
+.header-shopping-menu {
     flex-grow: 1;
     margin: 1em 0.5em;
+    font-weight: bold;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: flex-end;
 }
 
-.shoppingNav__menu a {
+.header-shopping-menu a {
     padding: 0.8%;
     margin: 0 0.5%;
     text-transform: uppercase;
@@ -77,21 +95,147 @@ body a:hover {
     font-size: bold;
 }
 
-.shoppingNav__searchBox {
+.search-box {
     color: #c2c2c2;
     border: 1px solid #7a7a7a;
     padding: 0.7em;
-    width: 12%;
+    width: 10em;
     display: flex;
     justify-content: space-between;
     position: absolute;
-    bottom: 10%;
-    right: 15.5%;
+    bottom: 1em;
+    right: 0;
 }
 
 
 /* MAIN */
 main {
     background-color: #f1f1f1;
-    padding: 1em 16%;
+    padding: 1.5em 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-master-container {
+    max-width: 1100px;
+    position: relative;
+}
+
+.master-flex {
+    display: flex;
+}
+
+.side-shopping-menu, .page-title, .item {
+    background-color: #fff;
+    padding: 1.3em;
+    box-shadow: 0 0 0.4em 0.1em #BBB;
+}
+
+.side-shopping-menu {
+    margin: 1.2em;
+    align-self: flex-start;
+    top: 1.2em;
+    flex-basis: 20rem;
+}
+
+h1, h3, .side-shopping-menu-item {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+}
+
+h1 {
+    font-size: 1.25em;
+}
+
+h3 {
+    margin: 0.5em 0;
+}
+
+.side-shopping-menu-item {
+    border-bottom: 2px solid #DDD;
+    padding: 0.4em 0;
+}
+
+.side-shopping-menu-item:last-child {
+    margin-bottom: 1em;
+}
+
+.page-items {
+    padding: 1.2em;
+}
+
+.page-title {
+    padding-bottom: 10em;
+    margin-bottom: 1em;
+}
+
+.page-summarize {
+    margin: 2.5em 0;
+}
+
+.items {
+    margin: 1em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    width: 13.5rem;
+    text-align: center;
+    font-size: 0.9em;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.item__image img {
+    width: 100%;
+}
+
+.item__image:hover {
+    border-bottom: 1px solid #CCC;
+}
+
+.item__price {
+    font-weight: bold;
+    color: #000;
+}
+
+.item__image, .item__name, .item__price {
+    margin: 1em 0;
+}
+
+.item__strip{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    position: absolute;
+}
+
+.-avoid-waste {
+    background-color: #f39d72;
+    padding: 0.6em 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.-new {
+    background-color: #2fb5d2;
+    top: 15%;
+    left: 0;
+    padding: 0.6em;
+}
+
+
+@media (max-width: 800px) {
+    .side-shopping-menu {
+        display: none;
+    }
+
+    .item {
+        width: 10rem;
+    }
 }

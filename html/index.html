@@ -1,54 +1,165 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vrac Local Bio - Pic en Vrac</title>
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,600;1,400&display=swap"
-        rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="headerNav">
-            <span class="headerNav__contact">Appelez-nous : 06 32 31 67 14</span>
-            <a href="#" class="headerNav__button">Connexion</a>
-            <a href="#" class="headerNav__button --inactive">Panier (0)</a>
-        </div>
+      <dic class="header-nav-container">
+          <div class="header-nav">
+            <span class="header-nav__contact">Appelez-nous : 06 32 31 67 14</span>
+            <span class="white-space"></span>
+            <a href="#" class="header-nav__button">Connexion</a>
+            <a href="#" class="header-nav__button -inactive">Panier (0)</a>
+          </div>
+      </dic>
 
+      <div class="shopping-nav">
+        <nav class="shopping-nav-container">
+          <a class="shopping-nav-container__logoButton" href="#"
+            ><img src="../image/logo-pic-en-vrac.jpg" alt="Logo Pic en Vrac"
+          /></a>
 
-        <div class="shoppingNav">
-            <nav class="shoppingNav__container">
-                <a class="shoppingNav__logoButton" href="#"><img src="../image/logo-pic-en-vrac.jpg"
-                        alt="Logo Pic en Vrac"></a>
-
-                <div class="shoppingNav__menu">
-                    <a href="#">Nos produits</a>
-                    <a href="#">Livraison</a>
-                    <a href="#">Gestion des consignes</a>
-                    <a href="#">Nous connaître</a>
-                    <a href="#">Nos fournisseurs locaux</a>
-                </div>
-            </nav>
-            <span class="shoppingNav__searchBox">
-                <span>Rechercher</span>
-                <a href="#">&#128269</a>
-            </span>
-        </div>
+          <div class="header-shopping-menu">
+            <a href="#">Nos produits</a>
+            <a href="#">Livraison</a>
+            <a href="#">Gestion des consignes</a>
+            <a href="#">Nous connaître</a>
+            <a href="#">Nos fournisseurs locaux</a>
+          </div>
+          
+          <span class="search-box">
+            <span>Rechercher</span>
+            <a href="#">&#128269</a>
+          </span>
+        </nav>
+        
+      </div>
     </header>
 
     <main>
-        <p class="currentPath">
+
+      <div class="main-master-container">
+          <p class="currentPath">
             <a href="#">Accueil</a> / <a href="#">EPICERIE SALEE</a> / Apéritifs
-        </p>
+          </p>
+          <div class="master-flex">
+            <nav class="side-shopping-menu">
+              <h3><a href="#">Nos produits</a></h3>
+              <ul>
+                <li class="side-shopping-menu-item">
+                  <a href="#">Epicerie salée</a>
+                </li>
+                <li class="side-shopping-menu-item">
+                  <a href="#">Epicerie sucrée</a>
+                </li>
+                <li class="side-shopping-menu-item"><a href="#">Frais</a></li>
+                <li class="side-shopping-menu-item"><a href="#">Boissons</a></li>
+                <li class="side-shopping-menu-item">
+                  <a href="#">Beauté Hygiène</a>
+                </li>
+                <li class="side-shopping-menu-item">
+                  <a href="#">Entretien maison et divers</a>
+                </li>
+                <li class="side-shopping-menu-item"><a href="#">Asiatique</a></li>
+                <li class="side-shopping-menu-item">
+                  <a href="#">Les productions locales et ou artisanales</a>
+                </li>
+                <li class="side-shopping-menu-item">
+                  <a href="#">Les produits à commander</a>
+                </li>
+                <li class="side-shopping-menu-item"><a href="#">Anti gaspi</a></li>
+                <li class="side-shopping-menu-item"><a href="#">Idée cadeau</a></li>
+              </ul>
+            </nav>
+            <div class="page-items">
+              <div class="page-title">
+                <h1>Apéritifs</h1>
+              </div>
+              <p class="page-summarize">Il y a 25 produits.</p>
+              <div class="items">
+                <div class="item">
+                  <a class="item__image" href="#"
+                    ><img
+                      src="../image/amandes-selection-completes.jpg"
+                      alt="Amandes Selection Complètes"
+                  /></a>
+                  <a href="#"
+                    ><p class="item__name">Amandes Selection Complètes</p></a
+                  >
+                  <p class="item__price">5,00 €</p>
+                </div>
+                <div class="item">
+                  <a class="item__image" href="#"
+                    ><img
+                      src="../image/arachides-wasabi-130g.jpg"
+                      alt="Arachides Wasabi 130g"
+                  /></a>
+                  <a href="#"><p class="item__name">Arachides Wasabi 130g</p></a>
+                  <p class="item__price">1,90 €</p>
+                </div>
+                <div class="item">
+                  <p class="item__strip -avoid-waste">Promo / Anti gaspi</p>
+                  <p class="item__strip -new">Nouveau</p>
+                  <a class="item__image" href="#"
+                    ><img
+                      src="../image/bretzel-original-paquet-175g.jpg"
+                      alt="Bretzel Original Paquet 175g"
+                  /></a>
+                  <a href="#"
+                    ><p class="item__name">Bretzel Original Paquet 175g</p></a
+                  >
+                  <p class="item__price">1,30 €</p>
+                </div>
+                <div class="item">
+                  <a class="item__image" href="#"
+                    ><img
+                      src="../image/chips-de-lentilles-corail-60g.jpg"
+                      alt="Chips De Lentilles Corail 60g"
+                  /></a>
+                  <a href="#"
+                    ><p class="item__name">Chips De Lentilles Corail 60g</p></a
+                  >
+                  <p class="item__price">1,80 €</p>
+                </div>
+                <div class="item">
+                  <a class="item__image" href="#"
+                    ><img
+                      src="../image/chips-de-pois-chiches-60g.jpg"
+                      alt="Chips De Pois Chiches 60g"
+                  /></a>
+                  <a href="#"
+                    ><p class="item__name">Chips De Pois Chiches 60g</p></a
+                  >
+                  <p class="item__price">1,80 €</p>
+                </div>
+                <div class="item">
+                  <a class="item__image" href="#"
+                    ><img
+                      src="../image/cocktail-olives-denoy-bocal-37cl.jpg"
+                      alt="Cocktail Olives Denoytées Bocal"
+                  /></a>
+                  <a href="#"
+                    ><p class="item__name">Cocktail Olives Denoy Bocal...</p></a
+                  >
+                  <p class="item__price">2,20 €</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
     </main>
-
-</body>
-
+  </body>
 </html>
